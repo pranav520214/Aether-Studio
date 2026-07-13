@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VID-ED - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#07006c",
+                        "on-primary-fixed-variant": "#5516be",
+                        "secondary": "#4648d4",
+                        "primary-fixed": "#e9ddff",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#ffdcbb",
+                        "tertiary-container": "#a76500",
+                        "surface": "#fcf9f8",
+                        "on-error-container": "#93000a",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "primary": "#6b38d4",
+                        "on-background": "#1c1b1b",
+                        "inverse-primary": "#d0bcff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-secondary-fixed-variant": "#2f2ebe",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "error": "#ba1a1a",
+                        "primary-container": "#8455ef",
+                        "on-error": "#ffffff",
+                        "outline": "#7b7486",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary-fixed": "#e1e0ff",
+                        "on-primary-container": "#fffbff",
+                        "on-secondary-container": "#fffbff",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#d0bcff",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-bright": "#fcf9f8",
+                        "tertiary-fixed-dim": "#ffb869",
+                        "surface-dim": "#dcd9d9",
+                        "surface-tint": "#6d3bd7",
+                        "tertiary": "#855000",
+                        "on-primary-fixed": "#23005c",
+                        "surface-variant": "#e5e2e1",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#cbc3d7",
+                        "on-tertiary-fixed": "#2c1700",
+                        "secondary-container": "#6063ee",
+                        "inverse-surface": "#313030",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-container": "#f0edec",
+                        "surface-container-high": "#ebe7e7",
+                        "on-surface-variant": "#494454",
+                        "on-tertiary-fixed-variant": "#673d00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "8px",
+                        "xl": "32px",
+                        "base": "4px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "md": "16px",
+                        "sm": "12px",
+                        "lg": "24px",
+                        "gutter": "20px",
+                        "xxl": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-xl": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-background docked full-width top-0 bg-surface/80 dark:bg-background/80 backdrop-blur-md shadow-sm flex justify-between items-center w-full px-margin-desktop h-16 z-50">
+<div class="flex items-center gap-md">
+<span class="text-headline-md font-headline-md font-black tracking-tight text-primary dark:text-primary-fixed-dim">VID-ED</span>
+</div>
+<div class="flex-1 flex justify-start pl-xl">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="w-full bg-surface-container-low border-none rounded-full py-2 pl-10 pr-4 text-body-md font-body-md text-on-surface focus:ring-1 focus:ring-primary focus:outline-none transition-all placeholder:text-outline-variant" placeholder="Search projects..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-sm text-primary dark:text-primary-fixed-dim">
+<button class="p-2 hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors rounded-full" title="undo">
+<span class="material-symbols-outlined" data-icon="undo">undo</span>
+</button>
+<button class="p-2 hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors rounded-full" title="redo">
+<span class="material-symbols-outlined" data-icon="redo">redo</span>
+</button>
+<button class="text-label-md font-label-md px-4 py-2 hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors rounded-lg">Save</button>
+<button class="text-label-md font-label-md px-4 py-2 bg-primary text-on-primary rounded-lg hover:scale-95 duration-100 transition-transform">Export</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden ml-sm cursor-pointer">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="A highly detailed, professional headshot of a creative individual against a clean, warm white background. The lighting is soft and flattering, highlighting a friendly expression. The person is wearing modern, minimalist clothing fitting for a creative studio environment. High resolution, bright and airy light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAloPLBvRmFqn-g81C5JVcQYbAw_xVi2dFqFDSMxDHzuy_d_WCOhfF_lUzx4u4RVOGZ1kMvOqv35iKKi6E_2iH0ehF0B8vXkoqTNqUyCJ-DI2WqKEAaN1RJBN1ZYdWCV_YPW5svsWFaRP1QuziCN0qy_ma-8h345qi8fqBRaKNrR0Wfv51DC4SBbZxV9L_GwdEn8LziVpNwS8JaxIs4gWaVU5TgTJfMsR2xxptuaLZl2_x3ClatEQ5bh6KruzQHgXCRjHBxQTXjzhY"/>
+</div>
+</div>
+</header>
+<div class="flex flex-1 pt-16 overflow-hidden">
+<!-- SideNavBar -->
+<aside class="bg-surface-container-low dark:bg-surface-container-lowest docked left-0 h-full w-60 bg-surface-container-low dark:bg-surface-container-lowest flex flex-col h-full border-r border-outline-variant/30 py-lg px-sm fixed top-16 bottom-0 z-40 hidden md:flex">
+<div class="flex items-center gap-sm px-sm mb-lg">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+<img alt="Creative Studio Logo" class="w-full h-full object-contain p-2" data-alt="A stylized, abstract icon representing a creative studio, composed of simple geometric shapes in shades of deep purple and warm white. Minimalist design, clean lines, high-tech yet approachable corporate aesthetic suitable for a modern video editing platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmtDP7RGp6iiulm9RyaQNKMBhjPdAyV9fyQ4nFIO-za7Mz7g5KjRHrr4H-jvT3g7KPj9ySbaSXkrMPZcNB_5-zGHzcBLs0KvRoU-x96EoR_jEMVpB4fCHvD7jcQsl7bs2o-GbiWM7C210KHkH0Ls1EM9XEHiJS1LiAtdMvY5He_NrTxKxKLO6INRwW_K2dOBcWpNNL_ZOrJyBUrd4at6u662-HL8DjFx9W0WYNUFjmfluaPtnUow_vKEZ-Y-Z8ICrL_mFjIH5W9H8"/>
+</div>
+<div>
+<h2 class="text-headline-md font-headline-md text-primary leading-tight">VID-ED</h2>
+<p class="text-label-sm font-label-sm text-on-surface-variant">AI Creative Studio</p>
+</div>
+</div>
+<button class="w-full py-3 mb-xl bg-primary text-on-primary rounded-xl font-label-md text-label-md font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-sm shadow-primary/20">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span> New Project
+            </button>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-sm py-2.5 text-primary dark:text-primary-fixed-dim font-bold bg-primary-fixed/30 dark:bg-primary-container/20 rounded-lg text-label-md font-label-md scale-[0.98] duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill">home</span> Home
+                </a>
+<a class="flex items-center gap-3 px-sm py-2.5 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="folder_open">folder_open</span> Projects
+                </a>
+<a class="flex items-center gap-3 px-sm py-2.5 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="video_library">video_library</span> Media
+                </a>
+<a class="flex items-center gap-3 px-sm py-2.5 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span> AI Assistant
+                </a>
+<a class="flex items-center gap-3 px-sm py-2.5 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome_motion">auto_awesome_motion</span> Templates
+                </a>
+<a class="flex items-center gap-3 px-sm py-2.5 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="category">category</span> Assets
+                </a>
+<a class="flex items-center gap-3 px-sm py-2.5 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="ios_share">ios_share</span> Exports
+                </a>
+<a class="flex items-center gap-3 px-sm py-2.5 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="extension">extension</span> Plugins
+                </a>
+</nav>
+<div class="mt-auto pt-lg border-t border-outline-variant/30 space-y-1">
+<a class="flex items-center gap-3 px-sm py-2 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span> Settings
+                </a>
+<a class="flex items-center gap-3 px-sm py-2 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span> Help
+                </a>
+<a class="flex items-center gap-3 px-sm py-2 text-on-surface-variant dark:text-outline hover:text-on-surface hover:bg-surface-variant/50 dark:hover:bg-surface-container-high transition-all rounded-lg text-label-md font-label-md" href="#">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span> Support
+                </a>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 ml-0 md:ml-60 p-margin-mobile md:p-margin-desktop overflow-y-auto mb-8 bg-surface">
+<!-- Welcome Section -->
+<section class="mb-xl">
+<h1 class="text-headline-lg font-headline-lg md:text-headline-xl md:font-headline-xl text-on-surface mb-2">Welcome Back, Alex</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Ready to craft your next visual story?</p>
+</section>
+<!-- Quick Start Bento -->
+<section class="mb-xxl">
+<h2 class="text-headline-md font-headline-md text-on-surface mb-lg">Quick Start</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Highlighted Card -->
+<div class="group relative overflow-hidden rounded-[16px] bg-gradient-to-br from-primary to-primary-container p-[1px] cursor-pointer shadow-sm shadow-primary/20 hover:shadow-md hover:shadow-primary/30 transition-all hover:-translate-y-1">
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="h-full w-full bg-surface-container-lowest rounded-[15px] p-lg flex flex-col justify-between">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-primary text-[24px]" data-icon="add_circle">add_circle</span>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md text-primary mb-1">Create New Project</h3>
+<p class="text-body-md font-body-md text-on-surface-variant line-clamp-2">Start a blank canvas and build from scratch.</p>
+</div>
+</div>
+</div>
+<!-- Secondary Cards -->
+<div class="group rounded-[16px] bg-surface-container-low border border-outline-variant/20 p-lg cursor-pointer hover:bg-surface-container hover:shadow-sm transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center mb-md group-hover:bg-surface-dim transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]" data-icon="upload_file">upload_file</span>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-1">Import Video</h3>
+<p class="text-body-md font-body-md text-on-surface-variant line-clamp-2">Bring in existing footage to edit and refine.</p>
+</div>
+</div>
+<div class="group rounded-[16px] bg-surface-container-low border border-outline-variant/20 p-lg cursor-pointer hover:bg-surface-container hover:shadow-sm transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/10 flex items-center justify-center mb-md group-hover:bg-tertiary-container/20 transition-colors">
+<span class="material-symbols-outlined text-tertiary-container text-[24px]" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-1">Create from Prompt</h3>
+<p class="text-body-md font-body-md text-on-surface-variant line-clamp-2">Generate a sequence using AI Director.</p>
+</div>
+</div>
+<div class="group rounded-[16px] bg-surface-container-low border border-outline-variant/20 p-lg cursor-pointer hover:bg-surface-container hover:shadow-sm transition-all hover:-translate-y-1">
+<div class="w-12 h-12 rounded-full bg-secondary-container/10 flex items-center justify-center mb-md group-hover:bg-secondary-container/20 transition-colors">
+<span class="material-symbols-outlined text-secondary-container text-[24px]" data-icon="dashboard_customize">dashboard_customize</span>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-1">Use a Template</h3>
+<p class="text-body-md font-body-md text-on-surface-variant line-clamp-2">Jumpstart with professional preset layouts.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-xl">
+<!-- Recent Projects -->
+<section class="xl:col-span-2">
+<div class="flex items-center justify-between mb-lg">
+<h2 class="text-headline-md font-headline-md text-on-surface">Recent Projects</h2>
+<a class="text-label-md font-label-md text-primary hover:underline" href="#">View All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<div class="group rounded-[16px] bg-surface-container-lowest border border-outline-variant/20 overflow-hidden hover:shadow-md transition-shadow">
+<div class="aspect-video relative overflow-hidden bg-surface-dim">
+<img alt="Urban Promo Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A cinematic still frame of an urban landscape at dusk, featuring sleek modern architecture with glowing neon purple accents against a deep blue sky. High quality, wide angle lens, suggesting a modern promotional video project." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8AA_RurfQXSJZ221QcVzEgxQ4FRv0AlsxtEOzho_EAHwq2oASztT1egF76fWX9hjJWnYRsLLUOmEYzO-p2TY3AV2F1VorcBDgCgypUe1v_7sVz2iqoNx_KKc5DIZV9-EjtOOBHAOPZF4KnnuAgqKJ72xU7fDa9Wy22_3KpOs1jjcvZchb7RcuW4inu3P0ho8rsmb1GU3I5s-Ut7TMtj0M77mbhvzPODNsnhNKN4r7K2NjZOnRF_cruUakDF3oXws0jacwIW1x-Zw"/>
+<div class="absolute bottom-2 right-2 bg-black/60 backdrop-blur-sm text-white text-label-sm font-label-sm px-2 py-1 rounded">02:15</div>
+</div>
+<div class="p-md">
+<h3 class="text-body-lg font-body-lg font-semibold text-on-surface truncate mb-1">Urban Promo Q3</h3>
+<div class="flex items-center text-label-md font-label-md text-on-surface-variant gap-2">
+<span>Edited 2h ago</span>
+<span>•</span>
+<span>1080p</span>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group rounded-[16px] bg-surface-container-lowest border border-outline-variant/20 overflow-hidden hover:shadow-md transition-shadow">
+<div class="aspect-video relative overflow-hidden bg-surface-dim">
+<img alt="Tech Review Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A bright, airy still frame of a product lifestyle shot. A minimalist desk setup featuring a sleek laptop, a small potted plant, and a notebook. Soft, diffused lighting creating a clean, modern aesthetic suitable for a tech review video." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_BZu_XibhmOh6_a2w4CgbTJSnjsDhnxnZ6V5UzmmFQj4LSyYPYxwsKTQau5BBgEY3XRBTMTjmmrGFrV0sqQ1DyK1kl9ebmRbMTH2ZBJXW_RbLLY_FiyqWkU0Qz5b5zCUS3WpkppXQaAZMOr9wVTancrRcycOZ8brW5CNbAEP__NW5ShX7eMLdqCW2-IcfQaAtKPVpyKvmEDeZYGHJRxYi49wOf1iHaseBDo6D67NN-eH2d6MBfpjlsj-6IBK1XmwR5wUo5akqRUE"/>
+<div class="absolute bottom-2 right-2 bg-black/60 backdrop-blur-sm text-white text-label-sm font-label-sm px-2 py-1 rounded">10:42</div>
+</div>
+<div class="p-md">
+<h3 class="text-body-lg font-body-lg font-semibold text-on-surface truncate mb-1">Tech Review - Desk Setup</h3>
+<div class="flex items-center text-label-md font-label-md text-on-surface-variant gap-2">
+<span>Edited yesterday</span>
+<span>•</span>
+<span>4K</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Learning Center -->
+<section class="xl:col-span-1">
+<div class="bg-surface-container-low rounded-[16px] p-lg h-full border border-outline-variant/10 shadow-[0_4px_12px_rgba(0,0,0,0.02)]">
+<div class="flex items-center gap-2 mb-lg">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Learning Center</h2>
+</div>
+<div class="space-y-4">
+<!-- Tutorial Item -->
+<a class="flex gap-4 p-3 rounded-lg hover:bg-surface-container-highest transition-colors group" href="#">
+<div class="w-20 h-16 shrink-0 rounded bg-surface-dim overflow-hidden relative">
+<span class="material-symbols-outlined absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/80 z-10" data-icon="play_circle">play_circle</span>
+<img alt="Tutorial Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A conceptual illustration representing timeline editing, featuring abstract overlapping blocks of color in shades of purple and grey on a warm white background. Clean vector style, minimal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfUvDMsOVi3JNRUd88hDh17-f7F8bD7a1RQqxb4yQXUgk5sQBkWQJSXEC_bfioJ3FQJEVHPBstLDmOTISV2MtvjVu0V72l7Zi7cU-r8QgwqaVCTBuMm4-hBYgyQ4kjw52Gv55LWTUdyH-PPHH27OJVgjxToYQ4oxy9F-1dGPesYmLQrs8tczvTwdNBVgVVx7B8u5vKW9gXgCVTsTOG0UxfeNzCJpil6NEPT4e9SIt4sxR3V8QbzM5chbRIocm2vf0W_mXlm0BZTUA"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-body-md font-body-md font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">Mastering the Timeline</h4>
+<p class="text-label-md font-label-md text-on-surface-variant">3 min read • Basics</p>
+</div>
+</a>
+<!-- Tutorial Item -->
+<a class="flex gap-4 p-3 rounded-lg hover:bg-surface-container-highest transition-colors group" href="#">
+<div class="w-20 h-16 shrink-0 rounded bg-surface-dim overflow-hidden relative">
+<span class="material-symbols-outlined absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/80 z-10" data-icon="play_circle">play_circle</span>
+<img alt="Tutorial Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A conceptual illustration representing color grading, featuring a stylized color wheel or spectrum gradient transitioning from warm orange to cool blue. Clean, modern vector style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlsOIwK8M8a7M5wXDBrcD4CWrRaPLJz2_XkdpqfOosF0G0O_b6rSsm4Gvu_hiQVdOnL-nf3AHQhV9MSvE3rOqKWJN8shyg1OWM98lZBpLcOUDCJnaGL3zfo6a0btlUZZwHQxoYyTHpsyRHwvgI9bMAjxudFK5T259tbxqglMUX-siShRmpSBeY0gLUMflvlzMm8WlFsY4NQEAGKL7dbA4MsNcZbyhSQdNi2dgP7tMUkcBQxyl-zGcLD8ut9PHzc_y9vzyKmS48Wtc"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-body-md font-body-md font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">Color Grading 101</h4>
+<p class="text-label-md font-label-md text-on-surface-variant">5 min video • Intermediate</p>
+</div>
+</a>
+<!-- Tutorial Item -->
+<a class="flex gap-4 p-3 rounded-lg hover:bg-surface-container-highest transition-colors group" href="#">
+<div class="w-20 h-16 shrink-0 rounded bg-surface-dim overflow-hidden relative">
+<span class="material-symbols-outlined absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/80 z-10" data-icon="play_circle">play_circle</span>
+<img alt="Tutorial Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A conceptual illustration of artificial intelligence aiding in video editing, featuring a glowing brain or node network interacting with film strips. Minimalist tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD690XkT8BIsrz4RN8HowMFvZsnX9c2LMBjVec-EDAbTnfGS0bDCO6OWyIMJkq4KXUeuhYZsSeVAUMibb0u297bBTLUVmVZR63ZHZvSyHemE6FH7krmF-D9wb_GYGvK_c3F_ta_85j-k6whxzG1ljzQOB9G-seKnu7zFcbI4Wq23UM_omYXDihORZhgA13VDIcrNYcL71RYKKWdlMETulFnXyNWbOnrhDExpZiVtwy1G50vAI4QU-dINaKizewiXxfdXYCLQbdvKG0"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-body-md font-body-md font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">Using AI Director</h4>
+<p class="text-label-md font-label-md text-on-surface-variant">4 min read • Advanced</p>
+</div>
+</a>
+</div>
+<button class="w-full mt-lg py-2 border border-outline-variant/30 rounded-lg text-label-md font-label-md text-on-surface font-medium hover:bg-surface-variant transition-colors">
+                            Explore All Guides
+                        </button>
+</div>
+</section>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-dim dark:bg-surface-container-lowest docked bottom-0 full-width h-8 bg-surface-dim/50 dark:bg-surface-container-lowest/50 border-t border-outline-variant/10 flat no shadows fixed bottom-0 left-0 md:left-60 right-0 md:right-0 flex items-center justify-between px-md z-40">
+<span class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant">Auto-saved 2m ago</span>
+<div class="flex items-center gap-md">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline hover:text-primary transition-colors" href="#">Quick Search (⌘K)</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline hover:text-primary transition-colors" href="#">Advanced Mode</a>
+</div>
+</footer>
+</body></html>

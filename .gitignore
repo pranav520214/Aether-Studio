@@ -1,34 +1,16 @@
 ```
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
-venv/
-env/
-ENV/
-.venv/
-.env/
-
 # Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.venv/
+venv.bak/
 pip-log.txt
 pip-delete-this-directory.txt
 .tox/
@@ -39,29 +21,48 @@ nosetests.xml
 coverage.xml
 *.cover
 *.log
-.git/info/exclude
+*.pot
+*.po
+*~
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# Build artifacts
+build/
+dist/
+*.egg
+*.egg-info/
+.libs/
+.installed.cfg
+*.manifest
+*.spec
 
 # Environment variables
 .env
-.venv.bak/
-.venv.backup/
-.venv.save/
+.env.local
+.env.*
 
-# Security and cache
-.stestr/
-.hypothesis/
-.pyre/
-.pytype/
-.mypy_cache/
-.pytest_cache/
-.coverage/
-
-# OS generated files
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
+
+# Rust/Cargo (from src-tauri)
+target/
+Cargo.lock
+
+# TypeScript/Vite
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+
+# Runtime
+ai-runtime/__pycache__/
+ai-runtime/*.pyc
 ```

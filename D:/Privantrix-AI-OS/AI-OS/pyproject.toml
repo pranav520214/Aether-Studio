@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "privantrix-ai-os"
+version = "1.0.0"
+description = "Production-quality AI Operating System bootstrap installer"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Privantrix AI OS Team"}
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.5.0",
+    "sqlalchemy>=2.0.25",
+    "chromadb>=0.4.22",
+    "sentence-transformers>=2.3.0",
+    "langchain>=0.1.0",
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+    "requests>=2.31.0",
+    "pyyaml>=6.0.1",
+    "python-dotenv>=1.0.0",
+    "psutil>=5.9.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.4",
+    "pytest-asyncio>=0.23.3",
+    "black>=23.12.0",
+    "ruff>=0.1.9",
+]
+ml = [
+    "torch>=2.1.0",
+    "transformers>=4.36.0",
+]
+
+[project.scripts]
+privantrix = "main:cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
